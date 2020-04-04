@@ -23,7 +23,7 @@ public class MyOlap {
         ConfigurableApplicationContext application = SpringApplication.run(MyOlap.class, args);
         Environment env = application.getEnvironment();
         String ip = InetAddress.getLocalHost().getHostAddress();
-        String port = env.getProperty("server.port");
+        String port = env.getProperty("server.port"); 
         String path = env.getProperty("server.servlet.context-path");
         log.info("\n----------------------------------------------------------\n\t" +
                 "Application MyOlap is running! Access URLs:\n\t" +
